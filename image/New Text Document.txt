@@ -1,0 +1,35 @@
+1.HAPPY STUDENTS 
+HAPPY STUDENTS Indian and Bangla Desh students
+
+at UCLA sing the Bangla Desh National Anthem and
+
+display new nation's flag during celebration over the
+
+end of India-Pakistan war. (UPI Telephoto)
+
+2.Freedom Fighters
+3.pakistani army surrender in bangladesh
+4.Freedom Fighters
+
+
+
+CREATE TABLE IF NOT EXISTS `photos` (
+  `photos_id` int(11) NOT NULL AUTO_INCREMENT,
+  `caption`  varchar(50) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `img` LONGBLOB NOT NULL, 
+  `approve_status` BOOLEAN,
+  `view_count` int NOT NULL,
+  PRIMARY KEY (`photos_id`),
+  FOREIGN KEY (`user_id`)
+  REFERENCES users(`user_id`)
+);
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    color: black;
+    text-align: center;
+ }
